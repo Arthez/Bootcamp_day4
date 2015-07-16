@@ -3,4 +3,5 @@
     <string name="name_hint">name</string>
     <string name="register">register</string>
     <string name="refresh">refresh</string>
+    <string name="invalid_username">Invalid user name!</string>
 </resources>

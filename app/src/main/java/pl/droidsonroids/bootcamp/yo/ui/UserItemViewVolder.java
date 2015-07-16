@@ -1,5 +1,6 @@
 package pl.droidsonroids.bootcamp.yo.ui;
 
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
@@ -12,7 +13,15 @@ public class UserItemViewVolder extends RecyclerView.ViewHolder {
         super(itemView);
     }
 
-    public void bindData(User user) {
+    public void bindData(User user, boolean sender) {
+
         ((TextView) itemView).setText(user.getName());
+        if(sender) {
+            itemView.setBackgroundColor(Color.YELLOW);
+        } else {
+            itemView.setBackgroundColor(Color.WHITE);
+        }
     }
+
+
 }
